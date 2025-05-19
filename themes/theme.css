@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* === Fundo com GIF === */
+body, .container__content {
+  background-image: url("https://i.postimg.cc/KctG5d6d/0518.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffff;
+}
+
+/* === Elementos com fundo translúcido === */
+.header,
+.sidebar,
+.container__content,
+.bottom-panel,
+.toast {
+  background-color: rgba(0, 0, 0, 0.2); /* só 20% opaco */
+  backdrop-filter: blur(8px); /* efeito vidro fosco */
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+}
+
+/* === Sidebar com leve destaque */
+.sidebar {
+  border-right: 2px solid rgba(0, 255, 255, 0.3);
+}
+
+/* === Conteúdo === */
+.container__content {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* === Botões com transparência === */
+.button {
+  background-color: rgba(0, 0, 40, 0.2); /* quase transparente */
+  color: #ffffff;
+  padding: 10px 16px;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-shadow: 0 0 4px rgba(0, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+.button:hover {
+  background-color: rgba(128, 0, 255, 0.3);
+  box-shadow: 0 0 12px rgba(128, 0, 255, 0.6);
+}
+
+/* === Sombra nas fontes === */
+* {
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.3);
+}
